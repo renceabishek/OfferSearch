@@ -1,0 +1,10 @@
+
+    <form [formGroup]="searchForm" (ngSubmit)="open()">
+      <div class="form-group row col-sm-12">
+        <label class="col-sm-2"></label>
+        <input type="text" class="form-control col-sm-2" name="search" formControlName="search" />
+
+         <button kendoButton *ngIf="opened" (click)="open()">Open window</button>
+        
+      </div>
+    </form>
